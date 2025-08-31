@@ -7,6 +7,8 @@ from PIL import Image
 from keras.applications.vgg16 import VGG16
 from keras.applications.vgg16 import preprocess_input
 
+from keras.models import load_model
+
 # Define class names
 class_names = ['Covid', 'Normal', 'Viral Pneumonia']
 
