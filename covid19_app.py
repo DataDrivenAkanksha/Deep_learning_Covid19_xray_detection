@@ -24,7 +24,7 @@ uploaded_file = st.file_uploader("Upload a chest X-ray image", type=["jpg", "jpe
 if uploaded_file is not None:
     # Show uploaded image
     image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded X-ray Image", use_column_width=True)
+    st.image(image, caption="Uploaded X-ray Image", use_container_width=True)
 
     # Preprocess image
     img_resized = image.resize((224, 224))
