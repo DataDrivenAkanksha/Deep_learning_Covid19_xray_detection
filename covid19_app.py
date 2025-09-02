@@ -13,7 +13,7 @@ from keras.models import load_model
 class_names = ['Covid', 'Normal', 'Viral Pneumonia']
 
 # Load trained model
-model = load_model('model_vgg16_pretrained_data_aug.keras') 
+model = load_model('model_vgg16_pretrained.h5') 
 
 # Set title
 st.title("Chest X-ray Classification (COVID Detection)")
